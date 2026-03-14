@@ -8,7 +8,7 @@ spec:
   selector:
     matchLabels:
       app: lumiadb
-  replicas: 1
+  replicas: {{ .Values.db.replicas }}
   template:
     metadata:
       labels:
