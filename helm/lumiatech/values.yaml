@@ -1,0 +1,17 @@
+app:
+  image: ndzenyuy/lumia-app:latest
+  replicas: 1
+  port: 8080
+
+db:
+  image: ndzenyuy/lumia-db:latest
+  port: 3306
+  name: accounts
+  user: admin
+  password: admin123
+  storage: 3Gi
+  storageClass: gp2
+
+ingress:
+  host: www.lumiatechs.com
+  className: nginx
