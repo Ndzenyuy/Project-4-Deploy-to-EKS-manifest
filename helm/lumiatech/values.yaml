@@ -1,6 +1,6 @@
 app:
   image: ndzenyuy/lumia-app:368c558ff5b8961211c38e81c18d1b5e19eb7d85
-  replicas: 3
+  replicas: 2
   port: 8080
 
 db:
